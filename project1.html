@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/jpg" href="assests/logo.jpg">
+  <title>Climate Change Impact on Crop Yield Forecasting</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav>
+  <div class="navbar">
+    
+    <div class="navbar-left">
+      <a href="index.html" class="navbar-brand"> <img src="assests/pic2.jpg" alt="Lakesh Logo" class="logo"></a>
+    </div>
+
+    <div class="navbar-center">
+  <a href="index.html" class="nav-link">Portfolio</a>
+  <a href="projects.html" class="nav-link active">Projects</a>   </div>
+
+    <div class="navbar-right">
+      <button class="toggle-mode-btn" id="toggleModeBtn" aria-label="Toggle light/dark mode">
+        <i class="fas fa-moon"></i>
+      </button>
+    </div>
+
+  </div>
+</nav>
+  <div class="container">
+    <img src="assests/agri/agri_intro.png" alt="Farmland and forecast chart" class="cover-image">
+    <h1>Predicting Crop Yields in a Changing Climate</h1>
+
+    <div class="subtitle">
+      Using data science and machine learning to see how climate change could affect our food.<br>
+      <span><i class="fab fa-python"></i> Python &middot; Prophet &middot; Data Science &middot; Visualization</span>
+    </div>
+
+    <div class="section-title">What This Is About</div>
+    <p>
+      Climate change isn’t just news—it’s something that’s already changing the way we grow our food. I wanted to see, with real data, how rising temperatures might change crop yields around the world. So, I used open datasets and built forecasts with <b>Prophet</b> (a time series tool) to predict what could happen to crops in the next few years. My goal? Turn all that data into something useful that farmers and decision-makers can actually use.
+    </p>
+
+    <div class="section-title">Why I Care</div>
+    <p><b>Food security needs clear vision.</b> Even a little change in weather can mean a lot for food and for people’s lives. I wanted my project to give helpful, honest forecasts—so farmers can plan ahead, and leaders can prepare for what’s coming.</p>
+    <ul>
+      <li>Help farmers and businesses get ready for a changing climate.</li>
+      <li>Give useful info to people making policies or running food programs.</li>
+      <li>Strengthen food supply chains against climate surprises.</li>
+    </ul>
+
+    <div class="section-title">How I Did It</div>
+    <ul>
+      <li><b>Gathered the data:</b> I pulled together crop yield and climate data, cleaned it up, and filled any gaps.</li>
+      <li><b>Engineered new features:</b> Made new climate indicators to help my model predict better.</li>
+      <li><b>Built the models:</b> Used Prophet to make forecasts for each country and crop, adding temperature as a key input.</li>
+      <li><b>Visualized the results:</b> Made clear charts showing five-year forecasts, with confidence ranges so people can see the risks.</li>
+    </ul>
+
+    <div class="section-title">Forecasts: A Few Examples</div>
+
+    <!-- Forecast Images -->
+    <div class="captioned-image"><img src="assests/agri/Brazil_Rice_forecast.png" alt="Brazil Rice Yield Forecast"><div class="img-caption">Brazil: Rice yield forecast (with temperature trends)</div></div>
+    <div class="captioned-image"><img src="assests/agri/Brazil_Wheat_forecast.png" alt="Brazil Wheat Yield Forecast"><div class="img-caption">Brazil: Wheat yield forecast</div></div>
+    <div class="captioned-image"><img src="assests/agri/Brazil_Maize (corn)_forecast.png" alt="Brazil Maize Yield Forecast"><div class="img-caption">Brazil: Maize (corn) yield forecast</div></div>
+
+    <div class="captioned-image"><img src="assests/agri/Canada_Maize (corn)_forecast.png" alt="Canada Maize Yield Forecast"><div class="img-caption">Canada: Maize (corn) yield forecast</div></div>
+    <div class="captioned-image"><img src="assests/agri/Canada_Wheat_forecast.png" alt="Canada Wheat Yield Forecast"><div class="img-caption">Canada: Wheat yield forecast</div></div>
+
+    <div class="captioned-image"><img src="assests/agri/India_Maize (corn)_forecast.png" alt="India Maize Yield Forecast"><div class="img-caption">India: Maize (corn) yield forecast</div></div>
+    <div class="captioned-image"><img src="assests/agri/India_Rice_forecast.png" alt="India Rice Yield Forecast"><div class="img-caption">India: Rice yield forecast</div></div>
+    <div class="captioned-image"><img src="assests/agri/India_Wheat_forecast.png" alt="India Wheat Yield Forecast"><div class="img-caption">India: Wheat yield forecast</div></div>
+
+    <div class="captioned-image"><img src="assests/agri/United States of America_Maize (corn)_forecast.png" alt="USA Maize Yield Forecast"><div class="img-caption">USA: Maize (corn) yield forecast</div></div>
+    <div class="captioned-image"><img src="assests/agri/United States of America_Rice_forecast.png" alt="USA Rice Yield Forecast"><div class="img-caption">USA: Rice yield forecast</div></div>
+    <div class="captioned-image"><img src="assests/agri/United States of America_Wheat_forecast.png" alt="USA Wheat Yield Forecast"><div class="img-caption">USA: Wheat yield forecast</div></div>
+
+    <div class="section-title">What I Learned</div>
+    <ul>
+      <li>Some crops and places are way more sensitive to heat than others—it’s not the same everywhere.</li>
+      <li>Showing “uncertainty” in charts actually helps people see the risks and make better choices.</li>
+      <li>I made the process flexible, so it’s easy to use with new countries, crops, or climate data.</li>
+    </ul>
+
+    <div class="section-title">Why This Matters to Me</div>
+    <p>For me, this project wasn’t just about building a model. It was about using data to make a real impact—giving people the knowledge to adapt and protect our food. It proved to me that data science can help make better decisions and spark real change, not just predictions.</p>
+
+    <div class="tech-stack">
+      <b>Tech Stack</b>
+      <ul>
+        <li>Python (pandas, Prophet, matplotlib)</li>
+        <li>Jupyter Notebook</li>
+        <li>Data Visualization</li>
+        <li>HTML5 &amp; CSS3 (for this presentation)</li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

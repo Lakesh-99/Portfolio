@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/jpg" href="assests/logo.jpg">
+  <title>Resilient Energy Consumption Forecasting</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav>
+  <div class="navbar">
+    
+    <div class="navbar-left">
+      <a href="index.html" class="navbar-brand"> <img src="assests/pic2.jpg" alt="Lakesh Logo" class="logo"></a>
+    </div>
+
+    <div class="navbar-center">
+  <a href="index.html" class="nav-link">Portfolio</a>
+  <a href="projects.html" class="nav-link active">Projects</a>   </div>
+
+    <div class="navbar-right">
+      <button class="toggle-mode-btn" id="toggleModeBtn" aria-label="Toggle light/dark mode">
+        <i class="fas fa-moon"></i>
+      </button>
+    </div>
+
+  </div>
+</nav>
+ <div class="container">
+      <img src="assests/power/intro.png" alt="Energy Forecast Example" class="cover-image" style="margin-bottom: 2.2rem;">
+      
+    
+
+    <h1>Resilient Energy Consumption Forecasting</h1>
+    <div class="subtitle">
+      Making energy forecasts that are not just accurate, but also reliable—even when things get messy in the real world.<br>
+      <span style="color:#4a4e69;">
+        <i class="fas fa-bolt"></i> Python &middot; Streamlit &middot; Prophet &middot; Data Science &middot; Reliability Engineering
+      </span>
+    </div>
+
+    <div class="section-title">My Project, In My Own Words</div>
+    <p>
+      I built this app because I’ve seen how energy systems—like power grids, factories, and data centers—need predictions they can actually trust, not just numbers that look good in theory. My main goal was to make something that’s smart, but also tough enough to work when life isn’t perfect. I used Python, Prophet, and Streamlit, and added my own reliability features along the way.
+    </p>
+
+    <div class="section-title">Why This Matters To Me</div>
+    <p>
+      Good energy forecasts keep the lights on and help people and businesses plan. But models often break when there’s weird data or missing info. I wanted to solve that by making a tool that always gives a useful answer, even if something goes wrong. I care about this because I want my work to make a real impact, not just in a lab, but in the real world.
+    </p>
+    <ul>
+      <li><b>Prevents blackouts and overloads:</b> By giving reliable forecasts, operators can spot problems early and plan better.</li>
+      <li><b>Keeps businesses running smoothly:</b> Factories and hospitals can make safer, smarter decisions.</li>
+      <li><b>Helps the planet:</b> Reliable forecasts make it easier to use renewable energy safely.</li>
+      <li><b>Supports safety:</b> Even in emergencies, this tool makes sure there’s always a sensible prediction.</li>
+      <li><b>Builds trust:</b> By showing how each prediction was made, users know they can rely on the results.</li>
+      <li><b>Saves money and cuts waste:</b> Better forecasts mean less wasted energy and lower costs.</li>
+    </ul>
+    <p>
+      <b>In short:</b> I wanted to build something trustworthy and easy to understand, so people can count on it when it matters.
+    </p>
+
+    <div class="section-title">What I Built</div>
+    <ul>
+      <li><b>I did everything myself:</b> From cleaning the data and adding features, to training models and building a simple, interactive dashboard in Streamlit.</li>
+      <li><b>Resilience is built in:</b> I created a “circuit breaker” that spots problems in forecasts and switches to a safe fallback if needed, so users never get stuck with a bad prediction.</li>
+      <li><b>Easy to use, easy to trust:</b> Users can adjust settings, see clear graphs, and always know whether a forecast comes from the main model or a backup.</li>
+      <li><b>Tested for real-world use:</b> I wrote tests to make sure the app recovers from errors, so it’s actually ready for tough situations.</li>
+      <li><b>Modern tools, real impact:</b> Used the best open-source Python libraries and put it all together in a way anyone can use.</li>
+    </ul>
+
+    <div class="section-title">How It Works (Simple Version)</div>
+    <ul>
+      <li><b>Loads energy data</b> (real or simulated, with some randomness for realism).</li>
+      <li><b>Predicts the future</b> using Prophet or ARIMA.</li>
+      <li><b>Checks for weird results:</b> If a forecast looks wrong or the model fails, it instantly switches to a safe fallback (like the 7-day average).</li>
+      <li><b>Shows everything live</b> on an interactive dashboard—actual vs. predicted usage, and how the result was made.</li>
+    </ul>
+
+    <div class="section-title">Sample Visuals</div>
+    <div class="captioned-image">
+      <img src="assests/power/power1.jpg" alt="power generation">
+      <div class="img-caption">Power generation</div>
+    </div>
+    <div class="captioned-image">
+      <img src="assests/power/results.jpg" alt="Power forecasting">
+      <div class="img-caption">Power Forecasting</div>
+    </div>
+
+    <div class="tech-stack">
+      <b>Tech Stack:</b>
+      <ul>
+        <li>Python 3 – Data Science, Reliability Patterns</li>
+        <li>Prophet, ARIMA – Time Series Forecasting</li>
+        <li>Pandas, Numpy – Data Manipulation</li>
+        <li>Streamlit – Fast, interactive web interface</li>
+        <li>Custom Circuit Breaker & Fallback Logic (Python)</li>
+      </ul>
+    </div>
+    <div class="section-title">Why I'm Proud of This</div>
+    <p>
+      This project taught me how to think like a real user and plan for things going wrong, not just for the ideal case. It’s the kind of tool I wish I’d had earlier, and I’m excited to keep building things that really help people in the real world.
+    </p>
+</div>
+
+ <script src="main.js"></script>
+</body>
+</html>

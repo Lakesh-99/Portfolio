@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/jpg" href="assests/logo.jpg">
+  <title>Black Friday Deals Agent</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav>
+  <div class="navbar">
+    
+    <div class="navbar-left">
+      <a href="index.html" class="navbar-brand"> <img src="assests/pic2.jpg" alt="Lakesh Logo" class="logo"></a>
+    </div>
+
+    <div class="navbar-center">
+  <a href="index.html" class="nav-link">Portfolio</a>
+  <a href="projects.html" class="nav-link active">Projects</a>   </div>
+
+    <div class="navbar-right">
+      <button class="toggle-mode-btn" id="toggleModeBtn" aria-label="Toggle light/dark mode">
+        <i class="fas fa-moon"></i>
+      </button>
+    </div>
+
+  </div>
+</nav>
+ <div class="container">
+    <h1>Black Friday Deals Agent</h1>
+    <div class="subtitle">
+        I built this app so I (and anyone else) can easily track deals across Amazon, Best Buy, and Walmart—and never miss out on a great price.<br>
+        <span style="color:#4a4e69;">
+            <i class="fas fa-tags"></i> Made with Python, Flask, Web Scraping, SQLite, Twilio, and SMTP
+        </span>
+    </div>
+
+    <div class="captioned-image">
+        <img src="assests/blackfriday/inntro.png" alt="Black Friday Deals Agent Screenshot">
+        <div class="img-caption">
+            My dashboard lets me see all my tracked deals, live alerts, and predicted prices at a glance.
+        </div>
+    </div>
+
+    <div class="section-title">Why I Made This</div>
+    <p>
+        I was tired of checking product pages over and over, especially during Black Friday. I wanted something that could do all the deal-hunting for me, save time, and let me know right away when the price drops.
+    </p>
+
+    <div class="section-title">What’s Great About It</div>
+    <ul>
+        <li><b>Instant Alerts:</b> I get notified by email or text as soon as a price hits my target.</li>
+        <li><b>No More Manual Checking:</b> The app keeps track of prices for me, all day long.</li>
+        <li><b>Buy Smarter:</b> By seeing price history and tomorrow’s predictions, I know if a deal is actually good.</li>
+        <li><b>Flexible Alerts:</b> I can set different names, price goals, and contact details for each product.</li>
+    </ul>
+
+    <div class="section-title">How I Use It</div>
+    <ul>
+        <li>I paste in product links and set my alert preferences on the web form.</li>
+        <li>The app keeps checking prices and logs them automatically.</li>
+        <li>It predicts if prices might drop, so I can decide if I should wait or buy now.</li>
+        <li>When the price is right, I get an instant message—no need to keep watching the page.</li>
+    </ul>
+
+    <div class="section-title">What I Built</div>
+    <ul>
+        <li><b>Web Scrapers:</b> Get up-to-date prices from Amazon, Best Buy, and Walmart.</li>
+        <li><b>Price Logging:</b> Store every price in a database so I can track trends.</li>
+        <li><b>Price Prediction:</b> Estimate what tomorrow’s price might be using past data.</li>
+        <li><b>Email & Text Alerts:</b> Get notified wherever I am.</li>
+        <li><b>Easy-to-Use Interface:</b> No tech skills needed—just use the website.</li>
+        <li><b>Automatic Scheduler:</b> The app keeps running in the background so I don’t have to think about it.</li>
+    </ul>
+
+    <div class="section-title">Screenshots</div>
+
+    <div class="captioned-image">
+        <img src="assests/blackfriday/s2.jpg" alt="Setup Page">
+        <div class="img-caption">
+            Here’s where I enter products and set up alerts. The app handles the rest!
+        </div>
+    </div>
+
+    <div class="captioned-image">
+        <img src="assests/blackfriday/s1.jpg" alt="Dashboard">
+        <div class="img-caption">
+            The dashboard shows the latest prices, predictions, and links to each store.
+        </div>
+    </div>
+
+    <div class="tech-stack">
+        <b>Tech I Used:</b>
+        <ul>
+            <li><b>Python:</b> Core logic and automation</li>
+            <li><b>Flask:</b> Simple web app</li>
+            <li><b>BeautifulSoup & Requests:</b> Scraping product prices</li>
+            <li><b>SQLite:</b> Storing price history</li>
+            <li><b>Numpy:</b> Predicting price drops</li>
+            <li><b>Twilio:</b> Sending SMS alerts</li>
+            <li><b>SMTP:</b> Sending email alerts</li>
+        </ul>
+    </div>
+
+    <div class="section-title">Why This Matters to Me</div>
+    <p>
+        This wasn’t just a coding project—I actually use it all the time. It’s saved me (and my friends and family) from missing out on great deals. Plus, it was really fun to bring together everything I know about automation, data, and making life easier.
+    </p>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>

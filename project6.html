@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/jpg" href="assests/logo.jpg">
+  <title>AI Investment Research Assistant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav>
+  <div class="navbar">
+    
+    <div class="navbar-left">
+      <a href="index.html" class="navbar-brand"> <img src="assests/pic2.jpg" alt="Lakesh Logo" class="logo"></a>
+    </div>
+
+    <div class="navbar-center">
+  <a href="index.html" class="nav-link">Portfolio</a>
+  <a href="projects.html" class="nav-link active">Projects</a>   </div>
+
+    <div class="navbar-right">
+      <button class="toggle-mode-btn" id="toggleModeBtn" aria-label="Toggle light/dark mode">
+        <i class="fas fa-moon"></i>
+      </button>
+    </div>
+
+  </div>
+</nav>
+<div class="container">
+    <h1>AI Investment Research Assistant</h1>
+    <div class="subtitle">
+      I created this platform to help investors and analysts quickly get answers from company financial reports and public data, using the latest AI technology.
+    </div>
+
+    <div class="section-title">Project Overview</div>
+    <p>
+      This web app lets users analyze public company data by uploading SEC 10-K PDFs or fetching info from the Alpha Vantage API. It uses Retrieval-Augmented Generation (RAG) and transformer models to answer financial questions in simple, clear language.
+    </p>
+
+    <div class="section-title">Why This Matters</div>
+    <p>
+      Financial documents are long and hard to read. My project turns them into fast, useful answers, saving users time and making investing easier for everyone—not just experts.
+    </p>
+
+    <div class="section-title">What It Does</div>
+    <ul>
+      <li>Lets users upload 10-K PDFs or get data by company ticker</li>
+      <li>Answers plain-English questions like “What was the 2023 EPS?”</li>
+      <li>Summarizes key info from financial reports</li>
+    </ul>
+
+    <div class="section-title">How It Works</div>
+    <ul>
+      <li>Gets data from Alpha Vantage or PDF uploads</li>
+      <li>Breaks text into smaller pieces for smarter search (LangChain)</li>
+      <li>Uses FAISS to find the right info fast</li>
+      <li>Uses a Hugging Face language model to write the final answer</li>
+    </ul>
+
+    <div class="section-title">My Role</div>
+    <p>
+      I built the whole system, from the backend logic to the user interface, making sure it’s easy to use and gives helpful answers.
+    </p>
+
+    <div class="section-title">Screenshots</div>
+    <div class="captioned-image">
+      <img src="assests/airag/ticker.jpg" alt="Ticker Symbol Input Screenshot">
+      <div class="img-caption">Get data by typing in a company ticker and year.</div>
+    </div>
+    <div class="captioned-image">
+      <img src="assests/airag/pdf.jpg" alt="PDF Upload Screenshot">
+      <div class="img-caption">Upload financial reports as PDFs for instant AI analysis.</div>
+    </div>
+
+    <div class="section-title">Tech Used</div>
+    <div class="tech-stack">
+      <ul>
+        <li><strong>UI:</strong> Streamlit</li>
+        <li><strong>AI Models:</strong> Hugging Face Transformers (FLAN-T5)</li>
+        <li><strong>Search:</strong> Sentence Transformers + FAISS</li>
+        <li><strong>API:</strong> Alpha Vantage</li>
+        <li><strong>PDF Parsing:</strong> PyPDF2</li>
+      </ul>
+    </div>
+</div>
+
+
+  <script src="main.js"></script>
+</body>
+</html>

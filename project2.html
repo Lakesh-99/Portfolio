@@ -1,0 +1,115 @@
+
+  
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/jpg" href="assests/logo.jpg">
+  <title>Brain Tumor Detection with Deep Learning</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav>
+  <div class="navbar">
+    
+    <div class="navbar-left">
+      <a href="index.html" class="navbar-brand"> <img src="assests/pic2.jpg" alt="Lakesh Logo" class="logo"></a>
+    </div>
+
+    <div class="navbar-center">
+  <a href="index.html" class="nav-link">Portfolio</a>
+  <a href="projects.html" class="nav-link active">Projects</a>   </div>
+
+    <div class="navbar-right">
+      <button class="toggle-mode-btn" id="toggleModeBtn" aria-label="Toggle light/dark mode">
+        <i class="fas fa-moon"></i>
+      </button>
+    </div>
+
+  </div>
+</nav>
+<div class="container">
+  <img src="assests/intro.png" alt="Brain Tumor Project Intro" class="cover-image" style="margin-bottom: 2.2rem;">
+  <h1>Brain Tumor Detection with Deep Learning</h1>
+  <div class="subtitle">
+    Using AI to help spot brain tumors in MRI scans.<br>
+    <span style="color:#4a4e69;font-size:1em;">
+      <i class="fab fa-python"></i> Python &middot; TensorFlow/Keras &middot; Deep Learning &middot; Medical Imaging
+    </span>
+  </div>
+
+  <div class="section-title">Why I Did This</div>
+  <p>
+    Finding brain tumors early can save lives, but reading MRI scans isn’t easy—even for doctors. It takes a lot of time and attention, and mistakes can happen. I wanted to build an AI tool that could help: something fast, accurate, and reliable, so doctors can get a second set of “eyes” when it really counts. I also hoped this tech could help places that don’t have a lot of medical specialists.
+  </p>
+
+  <div class="section-title">What I Made</div>
+  <p>
+    I trained a deep learning model to detect brain tumors from MRI images. I used a dataset of more than 7,000 brain scans—including several types of tumors (glioma, meningioma, pituitary) and healthy brains. The goal was simple: make a model that can tell them apart really well.
+  </p>
+
+  <div class="section-title">How I Did It</div>
+  <p>
+    I handled every step myself: finding and cleaning data, looking at the images, making sure the model had enough variety, and building the neural network from scratch. I trained it, tested it, and made sure its results actually made sense for real-life use. I also checked how and why the model made its decisions, because in medicine, accuracy matters.
+  </p>
+
+  <div class="section-title">My Process</div>
+  <ul>
+    <li>Preprocessed and boosted the dataset to make sure the model learned from lots of examples.</li>
+    <li>Built and trained a Convolutional Neural Network (CNN) in Python with TensorFlow/Keras.</li>
+    <li>Tracked the learning progress, accuracy, and mistakes.</li>
+    <li>Double-checked the results using confusion matrices and per-class accuracy to make sure it was reliable.</li>
+  </ul>
+
+  <div class="section-title">Results</div>
+  <ul>
+    <li><b>Reached 99% accuracy</b> on test scans—so it’s very good at telling tumor types apart.</li>
+    <li>Gives fast, consistent predictions that could help doctors—especially in places with few specialists.</li>
+    <li>Working on this gave me real insight into using AI for healthcare, and what it takes to get it right.</li>
+  </ul>
+
+  <div class="section-title">The Human Side</div>
+  <p>
+    This project was more than just code. It felt personal—like I was actually building something that could help people. I learned to be patient, to experiment, and to keep going even when things got tough. Doing it all myself made me more confident in both my technical skills and my ability to stick with big, meaningful challenges.
+  </p>
+
+  <div class="section-title">A Few Visuals</div>
+  <div class="captioned-image">
+    <img src="assests/brain tumor/sample.png" alt="Sample Input MRI">
+    <div class="img-caption">A typical MRI image from my dataset.</div>
+  </div>
+  <div class="captioned-image">
+    <img src="assests/brain tumor/accuracy.png" alt="Training/Validation Accuracy Curve">
+    <div class="img-caption">Model accuracy as it learned—getting better over time.</div>
+  </div>
+  <div class="captioned-image">
+    <img src="assests/brain tumor/confusionmatrix.png" alt="Confusion Matrix">
+    <div class="img-caption">How well the model sorted each type of scan (confusion matrix).</div>
+  </div>
+  <div class="captioned-image">
+    <img src="assests/brain tumor/results.png" alt="Model Predictions on Test Images">
+    <div class="img-caption">Some examples of the model’s predictions on new images.</div>
+  </div>
+
+  <div class="tech-stack">
+    <b>Tech Stack</b>
+    <ul>
+      <li>Python (NumPy, Pandas, Matplotlib, TensorFlow/Keras)</li>
+      <li>Jupyter Notebook</li>
+      <li>Deep Learning (CNNs)</li>
+      <li>Data Visualization</li>
+      <li>HTML5 &amp; CSS3 (for this website)</li>
+    </ul>
+  </div>
+</div>
+
+
+ <script src="main.js"></script>
+</body>
+</html>
+
+</body>
+</html>

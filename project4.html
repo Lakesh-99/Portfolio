@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/jpg" href="assests/logo.jpg">
+  <title>Real-Time Financial News Sentiment Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav>
+  <div class="navbar">
+    
+    <div class="navbar-left">
+      <a href="index.html" class="navbar-brand"> <img src="assests/pic2.jpg" alt="Lakesh Logo" class="logo"></a>
+    </div>
+
+    <div class="navbar-center">
+  <a href="index.html" class="nav-link">Portfolio</a>
+  <a href="projects.html" class="nav-link active">Projects</a>   </div>
+
+    <div class="navbar-right">
+      <button class="toggle-mode-btn" id="toggleModeBtn" aria-label="Toggle light/dark mode">
+        <i class="fas fa-moon"></i>
+      </button>
+    </div>
+
+  </div>
+</nav>
+<div class="container">
+  <img src="assests/bert_sentiment/Intro.png" alt="Financial News Sentiment Dashboard Screenshot" class="cover-image" margin: 1.7em 0;>
+    <h1>Real-Time Financial News Sentiment Dashboard</h1>
+    <div class="subtitle">
+        Live financial news sentiment analysis made easy.<br>
+        <span style="color:#4a4e69;">
+            <i class="fas fa-chart-line"></i> Python · Streamlit · FinBERT · Plotly · NLP
+        </span>
+    </div>
+
+   
+
+    <div class="section-title">About This Project (In My Words)</div>
+    <p>
+        I built this dashboard because financial news is everywhere and it’s hard to keep up. I wanted to make it super easy for anyone—investors, analysts, or just the curious—to see how the news is feeling about any stock or company, right now. By using natural language processing (FinBERT) and a friendly web app, you can instantly check the market’s mood with just a few clicks.
+    </p>
+
+    <div class="section-title">Why It Matters</div>
+    <p>
+        News can move the markets fast, and missing a sentiment shift can mean missed opportunities. With my dashboard, you don’t need expensive tools or to read endless headlines. Now, anyone can spot trends, react quickly, and make smarter decisions based on real-time sentiment—all from a simple, clear interface.
+    </p>
+
+    <div class="section-title">What I Did</div>
+    <ul>
+        <li>Connected to NewsAPI to fetch the latest financial headlines, filtered by your keywords and date range.</li>
+        <li>Used FinBERT to automatically check if news is positive, negative, or neutral.</li>
+        <li>Made visual charts (pie and line graphs) with Plotly to show sentiment trends at a glance.</li>
+        <li>Designed a clean, easy-to-use app in Streamlit where anyone can search, filter, and see results instantly.</li>
+        <li>Automated all the hard parts: news updates, analysis, downloads, and error handling—so it “just works.”</li>
+    </ul>
+
+    <div class="section-title">How I Built It</div>
+    <ul>
+        <li>All in Python for flexibility and transparency.</li>
+        <li>Live news comes from NewsAPI; sentiment comes from FinBERT.</li>
+        <li>Visualizations and the app itself are built in Streamlit and Plotly.</li>
+        <li>The code is simple, modular, and ready for anyone to deploy or expand.</li>
+    </ul>
+
+    <div class="section-title">Why I’m Proud of This</div>
+    <p>
+        This project really improved my skills in NLP, data visualization, and building real apps that people can use. The best part for me is seeing how it makes complex tech simple and useful for anyone who wants to stay ahead in finance.
+    </p>
+
+      <div class="section-title">Visual Highlights</div>
+    <div class="captioned-image">
+        <img src="assests/bert_sentiment/screenshot1.jpg" alt="Interface of Application">
+        <div class="img-caption">Interface of Application</div>
+    </div>
+    <div class="captioned-image">
+        <img src="assests/bert_sentiment/screenshot2.jpg" alt="Sentiment of Apple stock">
+        <div class="img-caption">Sentiment of Apple stock</div>
+    </div>
+    <div class="captioned-image">
+        <img src="assests/bert_sentiment/Screenshot3.jpg" alt="Apple 30 news articles">
+        <div class="img-caption">Apple 30 news articles</div>
+    </div>
+
+    <div class="section-title">Tech Stack</div>
+    <ul>
+        <li>Python 3</li>
+        <li>Transformers (FinBERT)</li>
+        <li>Pandas</li>
+        <li>Streamlit</li>
+        <li>Plotly</li>
+        <li>NewsAPI</li>
+    </ul>
+</div>
+
+
+ <script src="main.js"></script>
+</body>
+</html>
